@@ -36,7 +36,6 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "superjson": "^2.2.1",
-    "ts-node": "^10.9.2",
     "zod": "^3.24.2"
   },
   "devDependencies": {
@@ -48,6 +47,7 @@
     "eslint-config-next": "^15.2.3",
     "prettier": "^3.5.3",
     "prisma": "^6.19.2",
+    "ts-node": "^10.9.2",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.27.0"
   },
@@ -56,6 +56,6 @@
   },
   "packageManager": "npm@11.6.1",
   "prisma": {
-    "seed": "ts-node prisma/seed.ts"
-  }
+    "seed": "node prisma/seed.js"
+  }  
 }

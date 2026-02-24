@@ -25,6 +25,13 @@ async function main() {
 }
 
 main()
-  .then(() => console.log("Seeded successfully"))
-  .catch(console.error)
-  .finally(() => prisma.$disconnect());
+  .then(() => {
+    console.log("Seeded successfully");
+  })
+  .catch((e) => {
+    console.error(e);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

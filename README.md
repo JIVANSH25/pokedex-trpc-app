@@ -82,4 +82,4 @@ npm run dev
 ```
 
 ## Live Demo 
-[https://pokedex-trpc-app.vercel.app/]
+[https://pokedex-trpc-app-eosin.vercel.app/]
